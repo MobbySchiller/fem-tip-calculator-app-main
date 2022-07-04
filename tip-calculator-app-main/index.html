@@ -21,26 +21,26 @@
       <article class="bill settings__element">
         <h2 class="title-dash">Bill</h2>
         <div class="form">
-          <input class="form__input" type="number" name="bill value" placeholder="0">
+          <input class="form__input" data-bill-input type="number" name="bill value" placeholder="0">
           <img class="form__input-icon" src="images/icon-dollar.svg" alt="">
         </div>
       </article>
       <article class="tip-selector settings__element">
         <h2 class="title-dash">Select Tip %</h2>
         <div class="tip-selector__options">
-          <button class="tip-selector__option">5%</button>
-          <button class="tip-selector__option">10%</button>
-          <button class="tip-selector__option">15%</button>
-          <button class="tip-selector__option">25%</button>
-          <button class="tip-selector__option">50%</button>
-          <input class="tip-selector__input tip-selector__option" type="text" placeholder="Custom">
+          <button class="tip-selector__option" data-tip-button>5%</button>
+          <button class="tip-selector__option" data-tip-button>10%</button>
+          <button class="tip-selector__option" data-tip-button>15%</button>
+          <button class="tip-selector__option" data-tip-button>25%</button>
+          <button class="tip-selector__option" data-tip-button>50%</button>
+          <input class="tip-selector__input tip-selector__option" data-tip-input type="text" placeholder="Custom">
         </div>
       </article>
       <article class="people-number settings__element">
         <h2 class="title-dash">Number of People</h2>
-        <p class="people-number__warning">Can't be zero</p>
+        <p class="people-number__warning" data-warning>Wrong format</p>
         <div class="form">
-          <input class="form__input" type="number" name="people number" placeholder="0">
+          <input class="form__input" data-people-input type="number" name="people number" placeholder="0">
           <img class="form__input-icon" src="images/icon-person.svg" alt="">
         </div>
       </article>
@@ -48,19 +48,20 @@
     <section class="result dashboard__element">
       <article class="result__element">
         <h2 class="result__name">Tip Amount<span class="result__name-completion">/ person</span></h2>
-        <p class="result__space">$<span class="result__value">0.00</span></p>
+        <p class="result__space">$<span class="result__value" data-result-tip>0.00</span></p>
       </article>
       <article class="result__element">
         <h2 class="result__name">Total<span class="result__name-completion">/ person</span></h2>
-        <p class="result__space">$<span class="result__value">0.00</span></p>
+        <p class="result__space">$<span class="result__value" data-result-total>0.00</span></p>
       </article>
-      <button class="result__reset-btn">Reset</button>
+      <button class="result__reset-btn" data-reset-button>Reset</button>
     </section>
   </main>
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/MobbySchiller">Krzysztof Burzynski</a>.
   </footer>
+  <script src="./js/App.js"></script>
 </body>
 
 </html>

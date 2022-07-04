@@ -115,6 +115,20 @@ body {
     outline: none;
 }
 
+.tip-selector__input:hover {
+    border: 2px solid var(--strongCyan);
+    background-color: var(--veryLightGrayishCyan);
+    cursor: pointer;
+}
+
+.tip-selector__input:focus {
+    border: 2px solid var(--strongCyan);
+}
+
+.tip-selector__input--active {
+    border: 2px solid var(--strongCyan);
+}
+
 /* INPUTS */
 .form {
     position: relative;
@@ -141,13 +155,13 @@ body {
     transform: translateY(-50%);
 }
 
-.form__input:hover, .tip-selector__input:hover {
+.form__input:hover{
     border: 2px solid var(--strongCyan);
     background-color: var(--veryLightGrayishCyan);
     cursor: pointer;
 }
 
-.form__input:focus, .tip-selector__input:focus {
+.form__input:focus {
     border: 2px solid var(--strongCyan);
 }
 
