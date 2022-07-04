@@ -6,14 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
   <header class="header">
-    <img src="./images/logo.svg" alt="application logo" class="logo">
+    <img src="./images/logo.svg" alt="application logo" class="header__logo">
   </header>
   <main class="dashboard">
-    <section class="settings">
+    <section class="settings dashboard__element">
       <article class="bill settings__element">
         <h2 class="title-dash">Bill</h2>
         <div class="form">
@@ -24,7 +28,7 @@
       <article class="tip-selector settings__element">
         <h2 class="title-dash">Select Tip %</h2>
         <div class="tip-selector__options">
-          <button class="tip-selector__option" data-value="5">5%</button>
+          <button class="tip-selector__option">5%</button>
           <button class="tip-selector__option">10%</button>
           <button class="tip-selector__option">15%</button>
           <button class="tip-selector__option">25%</button>
@@ -41,7 +45,7 @@
         </div>
       </article>
     </section>
-    <section class="result">
+    <section class="result dashboard__element">
       <article class="result__element">
         <h2 class="result__name">Tip Amount<span class="result__name-completion">/ person</span></h2>
         <p class="result__space">$<span class="result__value">0.00</span></p>
