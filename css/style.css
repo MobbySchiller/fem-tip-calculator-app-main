@@ -71,6 +71,11 @@ body {
 .people-number__warning--error {
     visibility: visible;
 }
+
+.people-number__input--error {
+    border-color: var(--red);
+}
+
 /* TIP SELECTOR */
 .tip-selector__options {
     display: flex;
@@ -165,13 +170,7 @@ body {
     border: 2px solid var(--strongCyan);
 }
 
-
-.people-number__input--error {
-    border-color: var(--red);
-}
-
 /* RESULT DASHBOARD */
-
 .result {
     position: relative;
     padding: 35px 20px;
@@ -239,7 +238,7 @@ body {
 
 @media (min-width: 900px) {
     .header {
-        margin: 4% 0;
+        margin: 2% 0;
     }
     .dashboard {
         width: 90%;
